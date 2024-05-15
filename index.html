@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: transparent;
+            border-color: transparent;
+
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            border-color: transparent;
+        }
+
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-color: orange;
+        }
+
+        input[type="submit"]:hover {
+            background-color: blue;
+            border-color: orange;
+        }
+    </style>
+    <style>
+        .ceoscrolling-wrapper {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .ceoscrolling-wrapper .card {
+            display: inline-block;
+            width: 320px;
+            height: 500px;
+
+
+            /* Responsive width */
+            position: relative;
+            /* Set position to relative for absolute positioning */
+        }
+
+
+
+        .ceoscrolling-wrapper .ceocard .ceocard-description {
+            padding: 10px;
+            max-height: 150px;
+            /* Limit the height */
+            overflow: hidden;
+            /* Hide overflow */
+        }
+
+        .ceoscrolling-wrapper .ceocard .ceocard-description p {
+            margin-bottom: 5px;
+            /* Adjust spacing between paragraphs */
+        }
+
+        .ceoscrolling-wrapper::-webkit-scrollbar {
+            display: none;
+            /* Hide scrollbar for Chrome, Safari and Opera */
+        }
+
+        .ceoscrolling-wrapper {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+
+    <div class="vdeo">
+        <div class="video-container">
+            <video autoplay loop muted playsinline class="background-video" width="100vw" height="100vh">
+                <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/ritesh-amazon.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+
+            </video>
+
+
+            <img src="https://assets-global.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4d11fd25fa9_Frame%201000003044%20(2).svg" alt="Top Left Image" class="top-left-image">
+            <div class="centered-content ">
+                <h1 class="micro-heading">A Manager at<a> <img src="https://assets-global.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff44006d25f7f_Frame%201000002982.svg" class="microsoft"></a><br> Teaches you About<span class="micro-heading1">
+                        Coding
+                    </span></h1>
+                <div>
+                    <div>
+                        <a href="#loginForm" class="space"> <button class="claimaccess1">Claim Access</button></a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/MxF43cZxquo"> <button class="transpo ">WATCH NOW</button></a>
+                    </div>
+
+                </div>
+                <h6 class="text-white m-3 d-sm-block">Get 1 Podcast worth <span class="ml-2"> ₹2000 </span> <img src="https://assets-global.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff450f5d25f9f_Vector%201.png" loading="lazy" alt="" class="image-strike1"><span class="free">Free</span></h6>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="slideshow-bg">
+        <h2 class="slideshow-heading pt-5">Our Speakers Come From<br>Your Dream Companies</h2>
+        <div class="tech-slideshow">
+            <div class="mover-1">
+                <div class="mt-3 mb-5">
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/our-speaker-come-from-section/company-scroll-strip-row-2.png" height="42px" class="mb-3" />
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/our-speaker-come-from-section/company-scroll-strip-row-1.png" height="42px" class="mt-3 " />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="sectionHome">
+            <div class="ceo">
+                <div class="ceocontainer">
+                    <h1 class="ceoheading pt-4"><br>A Rare Collection of Insider
+                        Knowledge, All Yours! </h1>
+                    <p class="ceopara">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.</p>
+                    <div class="ceobuttons">
+                        <a href="#section1" target="_blank"> <button class="ceobutton">🔥 Trending</button></a>
+                        <button class="ceobutton" onclick="display('sectionall')">All</button>
+                        <button class="ceobutton" onclick="display('sectiontech')">Tech</button>
+                        <button class="ceobutton" onclick="display('sectioncareer')">Career</button>
+                        <button class="ceobutton" onclick="display('sectioncxo')">CXO</button>
+                        <button class="ceobutton" onclick="display('sectionproductivity')">Productivity</button>
+                        <button class="ceobutton" onclick="display('sectiongsoc')">GSOC</button>
+                        <button class="ceobutton" onclick="display('sectionpanel')">Panel</button>
+
+                    </div>
+                    <div class="container-fluid  pt-5 pb-5  ">
+
+                        <div class="row">
+
+                            <div class="col-12">
+
+                                <div class="ceoscrolling-wrapper">
+
+                                    <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                        <div class="ceoimg">
+                                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                        </div>
+                                        <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                        <div class="d-flex flex-row ml-2 ">
+                                            <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                            <p class="m-1">45:17 Mins</p>
+
+                                        </div>
+                                        <div class="text-left ml-2">
+                                            <h6 class="mt-2">Sandeep Gorthi</h6>
+                                            <p>Engineering Manager at Uber</p>
+                                        </div>
+                                        <div class="text-primary text-left ml-2">
+                                            What You will Learn
+
+                                            <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                        <div class="ceoimg">
+                                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                        </div>
+                                        <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                        <div class="d-flex flex-row ml-2 ">
+                                            <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                            <p class="m-1">55:17 Mins</p>
+
+                                        </div>
+                                        <div class="text-left ml-2">
+                                            <h6 class="mt-2">Sanjay Sehgal</h6>
+                                            <p>Senior Recruiter at Amazon</p>
+                                        </div>
+                                        <div class="text-primary text-left ml-2">
+                                            What You will Learn
+
+                                            <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                        <div class="ceoimg">
+                                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                        </div>
+                                        <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                        <div class="d-flex flex-row ml-2 ">
+                                            <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                            <p class="m-1">41:01 Mins</p>
+
+                                        </div>
+                                        <div class="text-left ml-2">
+                                            <h6 class="mt-2">Pritesh Malode</h6>
+                                            <p>Senior Recruiter at Amazon</p>
+                                        </div>
+                                        <div class="text-primary text-left ml-2">
+                                            What You will Learn
+
+                                            <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <a href="#loginForm" class="space"><button class=" ceoaccess mt-4">Claim Access</button>
+                                </a>
+                                <div class="d-sm-block">
+                                    <h6 class="text-white m-3 ">Get 1 Podcast worth <span class="ml-2"> ₹2000 </span> <span class="free">Free</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div id="sectionall">
+            <div>
+                <div class="ceo">
+                    <div class="ceocontainer">
+                        <h1 class="ceoheading pt-4">A Rare Collection of Insider<br>
+                            Knowledge, All Yours!</h1>
+                        <p class="ceopara">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.</p>
+                        <div class="ceobuttons">
+                            <button class="ceobutton" onclick="display('sectionHome')">🔥 Trending</button>
+                            <button class="ceobutton" onclick="display('sectionall')">All</button>
+                            <button class="ceobutton" onclick="display('sectiontech')">Tech</button>
+                            <button class="ceobutton" onclick="display('sectioncareer ')">Career</button>
+                            <button class="ceobutton" onclick="display('sectioncxo ')">CXO</button>
+                            <button class="ceobutton" onclick="display('sectionproductivity')">Productivity</button>
+                            <button class="ceobutton" onclick="display('sectiongsoc')">GSOC</button>
+                            <button class="ceobutton" onclick="display('sectionpanel')">Panel</button>
+
+                        </div>
+                        <div class="container-fluid  pt-5 pb-5  ">
+
+                            <div class="row">
+
+                                <div class="col-12">
+
+                                    <div class="ceoscrolling-wrapper">
+
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/goutam.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/abhinav.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/nikhil.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/ashok-vardhan.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/giridhar.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/shyama.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/architha-nagelli.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/priyatham-bollimpalli.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/siva-ghani-reddy.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/hari-tn.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/deepa-wadhwani.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/kalmeshwar.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/shri-dana-kishor.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/sri-vidhya.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/naveen.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/girish-akash.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/trivikrama-kothinti-2.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/shashank.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/trivikrama-kothinti.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/girish-akash-2.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href=""><button class=" ceoaccess ">Claim Access</button>
+                                    </a>
+                                    <h6 class="text-white m-3">Get 1 Podcast worth ₹2000 <span class="free">Free</span></h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="sectiontech">
+            <div>
+                <div class="ceo">
+                    <div class="ceocontainer">
+                        <h1 class="ceoheading pt-4">A Rare Collection of Insider<br>
+                            Knowledge, All Yours!</h1>
+                        <p class="ceopara">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.</p>
+                        <div class="ceobuttons">
+                            <button class="ceobutton" onclick="display('sectionHome')">🔥 Trending</button>
+                            <button class="ceobutton " onclick="display('sectionall')">All</button>
+                            <button class="ceobutton" onclick="display('sectiontech')">Tech</button>
+                            <button class="ceobutton" onclick="display('sectioncareer')">Career</button>
+                            <button class="ceobutton" onclick="display('sectioncxo')">CXO</button>
+                            <button class="ceobutton" onclick="display('sectionproductivity')">Productivity</button>
+                            <button class="ceobutton" onclick="display('sectiongsoc')">GSOC</button>
+                            <button class="ceobutton" onclick="display('sectionpanel')">Panel</button>
+
+                        </div>
+                        <div class="container-fluid  pt-5 pb-5  ">
+
+                            <div class="row">
+
+                                <div class="col-12">
+
+                                    <div class="ceoscrolling-wrapper">
+
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/goutam.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/abhinav.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/nikhil.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/ashok-vardhan.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/giridhar.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/shyama.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/architha-nagelli.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/priyatham-bollimpalli.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <a href=""><button class=" ceoaccess ">Claim Access</button>
+                                    </a>
+                                    <h6 class="text-white m-3">Get 1 Podcast worth ₹2000 <span class="free">Free</span></h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="sectioncareer">
+            <div>
+                <div class="ceo">
+                    <div class="ceocontainer">
+                        <h1 class="ceoheading pt-4">A Rare Collection of Insider<br>
+                            Knowledge, All Yours!</h1>
+                        <p class="ceopara">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.</p>
+                        <div class="ceobuttons">
+                            <button class="ceobutton" onclick="display('sectionHome')">🔥 Trending</button>
+                            <button class="ceobutton " onclick="display('sectionall')">All</button>
+                            <button class="ceobutton" onclick="display('sectiontech')">Tech</button>
+                            <button class="ceobutton" onclick="display('sectioncareer')">Career</button>
+                            <button class="ceobutton" onclick="display('sectioncxo')">CXO</button>
+                            <button class="ceobutton" onclick="display('sectionproductivity')">Productivity</button>
+                            <button class="ceobutton" onclick="display('sectiongsoc')">GSOC</button>
+                            <button class="ceobutton" onclick="display('sectionpanel')">Panel</button>
+
+                        </div>
+                        <div class="container-fluid  pt-5 pb-5  ">
+
+                            <div class="row">
+
+                                <div class="col-12">
+
+                                    <div class="ceoscrolling-wrapper">
+
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/siva-ghani-reddy.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/hari-tn.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/deepa-wadhwani.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/kalmeshwar.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/shri-dana-kishor.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/sri-vidhya.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/naveen.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/girish-akash.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/trivikrama-kothinti-2.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/shashank.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/trivikrama-kothinti.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/girish-akash-2.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <a href=""><button class=" ceoaccess ">Claim Access</button>
+                                    </a>
+                                    <h6 class="text-white m-3">Get 1 Podcast worth ₹2000 <span class="free">Free</span></h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="sectioncxo">
+            <div>
+                <div class="ceo">
+                    <div class="ceocontainer">
+                        <h1 class="ceoheading pt-4">A Rare Collection of Insider<br>
+                            Knowledge, All Yours!</h1>
+                        <p class="ceopara">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.</p>
+                        <div class="ceobuttons">
+                            <button class="ceobutton" onclick="display('sectionHome')">🔥 Trending</button>
+                            <button class="ceobutton " onclick="display('sectionall')">All</button>
+                            <button class="ceobutton" onclick="display('sectiontech')">Tech</button>
+                            <button class="ceobutton" onclick="display('sectioncareer')">Career</button>
+                            <button class="ceobutton" onclick="display('sectioncxo')">CXO</button>
+                            <button class="ceobutton" onclick="display('sectionproductivity')">Productivity</button>
+                            <button class="ceobutton" onclick="display('sectiongsoc')">GSOC</button>
+                            <button class="ceobutton" onclick="display('sectionpanel')">Panel</button>
+
+                        </div>
+                        <div class="container-fluid  pt-5 pb-5  ">
+
+                            <div class="row">
+
+                                <div class="col-12">
+
+                                    <div class="ceoscrolling-wrapper">
+
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/shiva-kumar.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay-sehgal.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/rakesh-mishra.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/ram-ganesh.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <a href=""><button class=" ceoaccess ">Claim Access</button>
+                                    </a>
+                                    <h6 class="text-white m-3">Get 1 Podcast worth ₹2000 <span class="free">Free</span></h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="sectionproductivity">
+            <div>
+                <div class="ceo">
+                    <div class="ceocontainer">
+                        <h1 class="ceoheading pt-4">A Rare Collection of Insider<br>
+                            Knowledge, All Yours!</h1>
+                        <p class="ceopara">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.</p>
+                        <div class="ceobuttons">
+                            <button class="ceobutton" onclick="display('sectionHome')">🔥 Trending</button>
+                            <button class="ceobutton " onclick="display('sectionall')">All</button>
+                            <button class="ceobutton" onclick="display('sectiontech')">Tech</button>
+                            <button class="ceobutton" onclick="display('sectioncareer ')">Career</button>
+                            <button class="ceobutton" onclick="display('sectioncxo ')">CXO</button>
+                            <button class="ceobutton" onclick="display('sectionproductivity')">Productivity</button>
+                            <button class="ceobutton" onclick="display('sectiongsoc')">GSOC</button>
+                            <button class="ceobutton" onclick="display('sectionpanel')">Panel</button>
+
+                        </div>
+                        <div class="container-fluid  pt-5 pb-5  ">
+
+                            <div class="row">
+
+                                <div class="col-12">
+
+                                    <div class="ceoscrolling-wrapper">
+
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/kiran.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <a href=""><button class=" ceoaccess ">Claim Access</button>
+                                    </a>
+                                    <h6 class="text-white m-3">Get 1 Podcast worth ₹2000 <span class="free">Free</span></h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="sectiongsoc">
+            <div>
+                <div class="ceo">
+                    <div class="ceocontainer">
+                        <h1 class="ceoheading pt-4">A Rare Collection of Insider<br>
+                            Knowledge, All Yours!</h1>
+                        <p class="ceopara">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.</p>
+                        <div class="ceobuttons">
+                            <button class="ceobutton" onclick="display('sectionHome')">🔥 Trending</button>
+                            <button class="ceobutton " onclick="display('sectionall')">All</button>
+                            <button class="ceobutton" onclick="display('sectiontech')">Tech</button>
+                            <button class="ceobutton" onclick="display('sectioncareer')">Career</button>
+                            <button class="ceobutton" onclick="display('sectioncxo')">CXO</button>
+                            <button class="ceobutton" onclick="display('sectionproductivity')">Productivity</button>
+                            <button class="ceobutton" onclick="display('sectiongsoc')">GSOC</button>
+                            <button class="ceobutton" onclick="display('sectionpanel')">Panel</button>
+
+                        </div>
+                        <div class="container-fluid  pt-5 pb-5  ">
+
+                            <div class="row">
+
+                                <div class="col-12">
+
+                                    <div class="ceoscrolling-wrapper">
+
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/rahul-garg.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">45:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sandeep Gorthi</h6>
+                                                <p>Engineering Manager at Uber</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/nirmal-manoj.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">55:17 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Sanjay Sehgal</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/sivay-lamba.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                            <div class="ceoimg">
+                                                <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/govind-goyal.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                            </div>
+                                            <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                            <div class="d-flex flex-row ml-2 ">
+                                                <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                                <p class="m-1">41:01 Mins</p>
+
+                                            </div>
+                                            <div class="text-left ml-2">
+                                                <h6 class="mt-2">Pritesh Malode</h6>
+                                                <p>Senior Recruiter at Amazon</p>
+                                            </div>
+                                            <div class="text-primary text-left ml-2">
+                                                What You will Learn
+
+                                                <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <a href=""><button class=" ceoaccess ">Claim Access</button>
+                                    </a>
+                                    <h6 class="text-white m-3">Get 1 Podcast worth ₹2000 <span class="free">Free</span></h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="sectionpanel">
+            <div class="ceo">
+                <div class="ceocontainer">
+                    <h1 class="ceoheading pt-4">A Rare Collection of Insider <br>
+                        Knowledge, All Yours!</h1>
+                    <p class="ceopara">All secrets uncovered. Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.</p>
+                    <div class="ceobuttons">
+                        <button class="ceobutton" onclick="display('sectionHome')">🔥 Trending</button>
+                        <button class="ceobutton " onclick="display('sectionall')">All</button>
+                        <button class="ceobutton" onclick="display('sectiontech')">Tech</button>
+                        <button class="ceobutton" onclick="display('sectioncareer')">Career</button>
+                        <button class="ceobutton" onclick="display('sectioncxo ')">CXO</button>
+                        <button class="ceobutton" onclick="display('sectionproductivity')">Productivity</button>
+                        <button class="ceobutton" onclick="display('sectiongsoc')">GSOC</button>
+                        <button class="ceobutton" onclick="display('sectionpanel')">Panel</button>
+
+                    </div>
+                    <div class="container-fluid  pt-5 pb-5  " id="ceosection1">
+
+                        <div class="row">
+
+                            <div class="col-12">
+
+                                <div class="ceoscrolling-wrapper">
+
+                                    <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                        <div class="ceoimg">
+                                            <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-2.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                        </div>
+                                        <h6 class="ceoheadingz text-left">An Engineering Manager at <br>Uber Teaches Programming</h6>
+                                        <div class="d-flex flex-row ml-2 ">
+                                            <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                            <p class="m-1">45:17 Mins</p>
+
+                                        </div>
+                                        <div class="text-left ml-2">
+                                            <h6 class="mt-2">Sandeep Gorthi</h6>
+                                            <p>Engineering Manager at Uber</p>
+                                        </div>
+                                        <div class="text-primary text-left ml-2">
+                                            What You will Learn
+
+                                            <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3 ">
+                                        <div class="ceoimg">
+                                            <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-1.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                        </div>
+                                        <h6 class="ceoheadingz text-left">A Global CEO Teaches <br>Mastering Time Management</h6>
+                                        <div class="d-flex flex-row ml-2 ">
+                                            <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                            <p class="m-1">55:17 Mins</p>
+
+                                        </div>
+                                        <div class="text-left ml-2">
+                                            <h6 class="mt-2">Sanjay Sehgal</h6>
+                                            <p>Senior Recruiter at Amazon</p>
+                                        </div>
+                                        <div class="text-primary text-left ml-2">
+                                            What You will Learn
+
+                                            <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="card col-12 col-md-7 col-lg-6 ceoslide m-3">
+                                        <div class="ceoimg">
+                                            <img src="https://nxtwave.imgix.net/ccbp-website/podcast/rare-collection-of-insider-knowledge/panel-3.png?auto=format,compress&q=80" alt="Sandeep" width="280px" ,="" height="195px" loading="lazy">
+                                        </div>
+                                        <h6 class="ceoheadingz text-left">A Sr. Recruiter at Amazon <br>Teaches Acing Interviews</h6>
+                                        <div class="d-flex flex-row ml-2 ">
+                                            <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" class="m-1 ">
+                                            <p class="m-1">41:01 Mins</p>
+
+                                        </div>
+                                        <div class="text-left ml-2">
+                                            <h6 class="mt-2">Pritesh Malode</h6>
+                                            <p>Senior Recruiter at Amazon</p>
+                                        </div>
+                                        <div class="text-primary text-left ml-2">
+                                            What You will Learn
+
+                                            <a href=""> <img alt="" loading="lazy" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4022b3a2553d7_arrow-right.svg" class="image-8128822045">
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <a href=""><button class=" ceoaccess ">Claim Access</button>
+                                </a>
+                                <h6 class="text-white m-3">Get 1 Podcast worth ₹2000 <span class="free">Free</span></h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid slider-background pt-5 pb-5 ">
+        <h2 class="student-feedback-section-heading text-center">Students Say,<br>It’s&nbsp;a&nbsp;Blockbuster!</h2>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="happy-feedback-heading-container ">
+                <div class="student-feedback-smilie-emoji-2 ">
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/emoji-icon.png" alt="emoji" height="100%" loading="lazy">
+                </div>
+                <div class="happy-feeback-slider-section-text">25000+Happy Feedbacks</div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/sai-rohith-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">Sai Rohith .1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image " alt="Another Image 1">
+                            <div class="card-description m-3">
+                                These podcasts are beneficial to us as it acts as a bridge, helping us to understand what to do next and how to face situations in life. Thanks ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/neha-panakanapalli-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">Neha Panakanapalli .1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image" alt="Another Image 1">
+                            <div class="card-description m-3">
+                                These podcasts are really special! I started listening from a student perspective and ended up learning the product manager's perspective ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/rahul-gunturi-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">Rahul Guturi .1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image" alt="Another Image 1">
+                            <div class="card-description m-3">
+                                The podcast with Sanjay Sehgal, CEO of MSys Technologies, is the best and incredibly valuable. I took nine pages of notes and ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/rupesh-reddy-loka-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">Rupesh Reddy Loka .1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image" alt="Another Image 1">
+                            <div class="card-description m-3">
+                                After Gowtham sir's podcast, I got really motivated with some of his insights and experiences and also noted some points! He enlightened ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/gunda-vamshi-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">Gunda Vamshi .1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image" alt="Another Image 1">
+                            <div class="card-description m-3">
+                                Very excellent and learnt many insights from the podcast. I really thank to Archita ma'am for delivering such great insights in the podcast. ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/narasimha-naidu-talari-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">Narasimha Naidu Talari .1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image" alt="Another Image 1">
+                            <div class="card-description m-3">
+                                Ma'am answered all our student questions and shared her experience on how to build the best career in IT! It is very useful to me , Thank you ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/nafiya-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">N S safiya.1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image" alt="Another Image 1">
+                            <div class="card-description m-3">
+                                I learned about Amazon's 4C's of hiring. The podcast provided great insights into the recruiter's perspective and the company's evaluation ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/sai-rohith-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">Sai Rohith .1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image" alt="Another Image 1">
+                            <div class="card-description m-3">
+                                These podcasts are beneficial to us as it acts as a bridge, helping us to understand what to do next and how to face situations in life. Thanks ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/sai-rohith-linkedin-profile-pic.png" class="card-img-top mt-4" alt="Slide 1">
+                                <div class="mt-4 ml-2">
+                                    <h5 class="card-title ">Sai Rohith .1st</h5>
+                                    <p class="card-text">Fellow at CCBP Academy 4.0 | Nxtwave </p>
+                                </div>
+                            </div>
+                            <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="top-right-image" alt="Another Image 1">
+                            <div class="card-description m-3">
+                                These podcasts are beneficial to us as it acts as a bridge, helping us to understand what to do next and how to face situations in life. Thanks ...
+                                <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&amp;utm_medium=member_desktop">Read more content here</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <div class="kk">
+        <h1 class="main">NxtWave's Empowering Podcast Series to Shape your Dream Career</h1>
+        <div class="head">
+            <div class="space">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/mic-logo.svg" alt="" height="60px" loading="lazy">
+            </div>
+            <div class="textseries">100+ Podcasts</div>
+        </div>
+        <div class="head">
+            <div class="space">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/rupee-logo.svg" alt="" height="60px" loading="lazy">
+            </div>
+            <div class="textseries">Each worth ₹2000/-</div>
+        </div>
+        <div class="head">
+            <div class="space">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/flame-logo.svg" alt="" height="60px" loading="lazy">
+            </div>
+            <div class="textseries">FREE for NxtWave Academy students</div>
+        </div>
+        <a href="#loginForm" class="space"> <button class="claimaccess">Claim Access</button></a>
+
+
+        <div class="container-fluid bg">
+            <div class="row">
+                <div class="bg col-12 col-md-6 col-xl-6">
+                    <div>
+                        <div>
+                            <span class="ok text-center">Claim Your</span><br />
+                            <span class="ok2 text-center"> Free Access to a Podcast</span>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12  col-xl-6 bg">
+                    <form id="loginForm">
+
+                        <label for="name" class="boc">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required class="box">
+                        <label for="phoneNumber" class="boc">Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required class="box">
+                        <input type="submit" value="Get OTP">
+                        <div id="otpContainer" style="display: none;">
+                            <label for="otp">Enter OTP:</label>
+                            <input type="text" id="otp" name="otp" placeholder="Enter OTP">
+                            <input type="submit" value="Verify OTP">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <p class="speaker">
+            * The speaker profiles are as on the recorded date
+        </p>
+        <div class="container-fluid footer-section pl-5 pr-5">
+            <div class="row ">
+                <div class="col-12 d-flex flex-row justify-content-start m-2 mt-5 ">
+                    <a href="https://www.ccbp.in"><img class="ml-4" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Nxtwave_White_logo.svg" alt="Nxtwave" width="100%" height="75px" loading="lazy" /></a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h6 class="fotter-section-heading mt-2 mb-2 ml-5">Reach us</h6>
+                    <a id="support-nxtwave-footer" href="mailto:support@nxtwave.tech" class=" ml-5 d-flex flex-row">
+                        <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c91504378bb16eca4973_mail-icon.svg" alt="" loading="lazy" class="email---icon-2">
+                        <div>
+                            <div class="whatsapp-link m-3">support@nxtwave.tech</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h6 class="fotter-section-heading mt-2 mb-2 ml-5">Quick Links</h6>
+
+                    <div class="d-flex flex-row">
+                        <ul class="list-items m-2">
+                            <a href="https://www.ccbp.in/?_gl=1*8ygzw2*_ga*MTE4NzcxNDgyMS4xNzA3MDUzNTA3*_ga_VNJELL2WMV*MTcxMTI4NTUzMi4xMC4xLjE3MTEyODc4NjQuMTkuMC4w">
+                                <li class="mb-3 list-items">Home</li>
+                            </a>
+                            <a href="https://www.ccbp.in/academy?_gl=1*1ebl55x*_ga*MTE4NzcxNDgyMS4xNzA3MDUzNTA3*_ga_VNJELL2WMV*MTcxMTI4NTUzMi4xMC4xLjE3MTEyODc5NTIuNTcuMC4w">
+                                <li class="mb-3 list-items">Academy</li>
+                            </a>
+                            <a href="https://www.ccbp.in/intensive?_gl=1*4syuty*_ga*MTE4NzcxNDgyMS4xNzA3MDUzNTA3*_ga_VNJELL2WMV*MTcxMTI4NTUzMi4xMC4xLjE3MTEyODgwNTEuNjAuMC4w">
+                                <li class="mb-3 list-items">Intensive</li>
+                            </a>
+                            <a href="https://www.ccbp.in/hire?_gl=1*8mrx78*_ga*MTE4NzcxNDgyMS4xNzA3MDUzNTA3*_ga_VNJELL2WMV*MTcxMTI4NTUzMi4xMC4xLjE3MTEyODgxMTQuNjAuMC4w">
+                                <li class="mb-3 list-items">Hire with us</li>
+                            </a>
+
+                        </ul>
+                        <ul class="list-items m-2">
+                            <a href="https://www.ccbp.in/contact-us?_gl=1*1x0rti3*_ga*MTE4NzcxNDgyMS4xNzA3MDUzNTA3*_ga_VNJELL2WMV*MTcxMTI4NTUzMi4xMC4xLjE3MTEyODgyMDguNjAuMC4w">
+                                <li class="mb-3 list-items">Contact us</li>
+                            </a>
+                            <a href="https://www.ccbp.in/about-us">
+                                <li class="mb-3 list-items">About us</li>
+                            </a>
+                            <a href="https://www.ccbp.in/reviews?_gl=1*zeotnn*_ga*MTE4NzcxNDgyMS4xNzA3MDUzNTA3*_ga_VNJELL2WMV*MTcxMTI4NTUzMi4xMC4xLjE3MTEyODgzNjIuNjAuMC4w">
+                                <li class="mb-3 list-items">Reviews</li>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h6 class="fotter-section-heading ml-5 ">Payments Methods</h6>
+
+                    <div class="ml-5 mt-2">
+                        <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c93dfbc8568fcb27e556_visa-icon.svg" loading="lazy" alt="" class="m-2">
+                        <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c976a29a435d3fc17f27_mastercard-icon.svg" loading="lazy" alt="" class="m-2">
+                        <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf36619310922216dcb_payment-method-icon3.svg" loading="lazy" alt="" class="m-2">
+                        <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf46ba93fa0919d5828_Razor-pay-icon.svg" loading="lazy" alt="" class="m-2">
+                        <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf34a02bed6c7dbc750_upi-icon.svg" loading="lazy" alt="" class="m-2">
+                        <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fd566ba93f145d9d5b57_rupay-icon.svg" loading="lazy" alt="" class="m-2">
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/618dff87c4047e7681214d33_location%20on.svg" loading="lazy" alt="" class="ml-5">
+                        <div>
+                            <div class="list-items mt-1">NxtWave, WeWork Rajapushpa Summit, Nanakramguda Rd, Financial District, Manikonda Jagir, Telangana 500032</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <hr class="line" />
+                </div>
+                <div class="col-12 col-md-2">
+                    <a id="footer-facebook-profile-link" href="https://www.facebook.com/NxtWave-106729994530632/" target="_blank" class="link-block-45 track-button w-inline-block"><img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fd520d11331f5f3b46ef_facebook-icon.svg" loading="lazy" alt="" class=" m"></a>
+                    <a id="footer-instagram-profile-link" href="https://www.instagram.com/ccbp_nxtwave/" target="_blank" class="link-block-45 track-button w-inline-block"><img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fe609dc6ce25f2f7078f_instgram-icon.svg" loading="lazy" alt="" class=""></a>
+                    <a id="footer-twitter-profile-link" href="https://twitter.com/nxtwave_tech" target="_blank" class="link-block-45 track-button w-inline-block"><img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f400cc41af69932df92c8a_twitterimage.svg" loading="lazy" alt="" class=""></a>
+                    <a id="footer-linkedin-profile-link" href="https://www.linkedin.com/company/nxtwavetech" target="_blank" class="link-block-45 track-button w-inline-block"><img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fe1a40dc31c249e1ab99_linkedin-icon.svg" loading="lazy" alt="" class=""></a>
+                    <a id="footer-youtube-profile-link" href="https://www.youtube.com/c/NxtWaveTech" target="_blank" class="link-block-43 track-button w-inline-block"><img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/62384993d97ad72405dee8d2_Frame%2031%20(1).svg" loading="lazy" alt="" class=""></a>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div>
+                        <div>
+                            <a href="https://www.ccbp.in/privacy-policy" id="footer-privacy-policy" class="list-items  ">Privacy&nbsp;Policy</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div>
+                        <a href="https://www.ccbp.in/cookie-policy" id="footer-mobile-cookie-policy" class="list-items ">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div>
+                        <div>
+                            <a href="https://www.ccbp.in/terms-and-conditions" id="footer-mobile-terms-conditions" class="list-items">
+                                Terms and Conditions</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div>
+                        <a href="https://www.ccbp.in/grievance-redressal" id="footer-mobile-grievance-redressal" class="list-items">Grievance Redressal</a>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <a href="https://www.ccbp.in/corporate-information" id="footer-mobile-corporate-information" class="list-items ">Corporate Information</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+
+</body>
+
+</html>
